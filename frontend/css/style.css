@@ -1,0 +1,180 @@
+/* ------------ Cores e medidas ------------ */
+:root {
+    --azul: #2f6fed;
+    --azul-escuro: #243b53;
+    --vermelho: #c0392b;
+    --borda: #d9e2ec;
+    --texto-suave: #52606d;
+    --raio: 8px;
+}
+
+/* ------------ Base ------------ */
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    color: #1f2933;
+    background: #f5f7fa;
+}
+
+header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: var(--azul-escuro);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    max-width: 52rem;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+/* ------------ Tabelas ------------ */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--borda);
+    text-align: left;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+th {
+    background: #f0f4f8;
+}
+
+/* ------------ Formulários ------------ */
+form label {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+form input, form select {
+    display: block;
+    width: 100%;
+    max-width: 24rem;
+    box-sizing: border-box;
+    padding: 0.5rem 0.6rem;
+    margin-top: 0.25rem;
+    border: 1px solid #bcccdc;
+    border-radius: 6px;
+    font: inherit;
+    background: #fff;
+}
+
+form input:focus, form select:focus {
+    outline: 2px solid #9db8f5;
+    border-color: var(--azul);
+}
+
+/* ------------ Botões ------------ */
+button, a.botao {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: var(--azul);
+    color: #fff;
+    font: inherit;
+    line-height: 1.4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, a.botao:hover {
+    filter: brightness(0.92);
+}
+
+.perigo {
+    background: var(--vermelho);
+}
+
+a.botao.secundario {
+    background: #fff;
+    color: #243b53;
+    border-color: #bcccdc;
+}
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* ------------ Detalhe da tarefa ------------ */
+/* rótulo e valor na mesma linha */
+dl {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 0.6rem 1rem;
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+}
+
+dt {
+    color: var(--texto-suave);
+    font-weight: 600;
+}
+
+dd {
+    margin: 0;
+}
+
+/* ------------ Status ------------ */
+.status {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 4px;
+    background: #d2762a;
+    color: #fff;
+}
+
+.status.concluida {
+    background: #539f6a;
+}
+
+/* ------------ Avisos ------------ */
+.aviso {
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+}
+
+.aviso.sucesso {
+    background: #d4f4dd;
+}
+
+.aviso.erro {
+    background: #fde1de;
+}
