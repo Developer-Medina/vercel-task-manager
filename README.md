@@ -4,6 +4,13 @@ Sistema web para cadastrar as matérias que o aluno cursa e acompanhar as tarefa
 
 Projeto da disciplina Prática em Análise e Desenvolvimento de Sistemas (Mackenzie).
 
+## Acesso
+
+- Aplicação: https://vercel-task-manager-frontend.vercel.app
+- Vídeo de demonstração (não listado): https://youtu.be/zCQXjAZ6B74
+- Plano de testes: [PlanoTestesCenario](PlanoTestesCenario) (13 scripts) e [métricas](PlanoTestesCenario/MetricasGerais.md)
+- Autenticação: desnecessária. O sistema não tem login.
+
 ## Estrutura
 
 ```
