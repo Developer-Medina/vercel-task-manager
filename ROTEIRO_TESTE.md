@@ -23,8 +23,11 @@ Casos de uso implementados:
 
 ## Acesso
 
-- URL: _(preencher depois da implantação)_
-- Autenticação: o sistema não tem login, então não há usuário nem senha. Todos os dados de teste são cadastrados pelo próprio sistema.
+- URL: https://vercel-task-manager-frontend.vercel.app
+- Vídeo de demonstração (não listado): https://youtu.be/zCQXjAZ6B74
+- Autenticação: desnecessária. O sistema não tem login, então não há usuário nem senha. Todos os dados de teste são cadastrados pelo próprio sistema.
+
+O front-end fica na Vercel e o back-end roda em servidor próprio. A aplicação fica no ar por pelo menos duas semanas a partir da entrega (18/11/2026).
 
 ## Estrutura
 
